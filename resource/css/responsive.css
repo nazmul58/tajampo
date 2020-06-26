@@ -1,0 +1,78 @@
+@media only screen and (max-width:1024px) {
+    ul.main-nav {
+     display: none;
+    }
+    .mobile-menu span{
+        display: block;
+    }
+}
+@media only screen and (max-width:980px){
+    .row{
+        margin: 0 2rem;
+    }
+    .play-video {
+        height: 29rem;
+    }
+
+    .m-t-20 {
+        margin-top: 7rem;
+    }
+}
+@media only screen and (max-width:768px){
+    html{
+        font-size: 57%;
+    }
+    .span_5_of_12{
+        width: 100%;
+    }
+    .span_7_of_12{
+        width: 100%;
+    }
+    .col-6{
+        width: 33.33%;
+    }
+        /* .col-6 div{
+            height: 100;
+        } */
+    .story-about {
+        text-align: center;
+    }
+    .contuct-section {
+        text-align: center;
+    }
+    .our-client .float {
+        float: none;
+    }
+    .our-client img{
+        width: auto;
+    }
+    /* .singale-slider{
+        height: 55rem;
+    } */
+}
+@media only screen and (max-width:480px){
+    .text-hero-box{
+        width: 80%;
+    }
+    .span_1_of_2 {
+        width: 50%;
+    }
+    .span_1_of_4 {
+        width: 50%;
+    }
+    .singale-meet {
+        margin: 0 .5rem;
+    }
+    .singale-testimonial p{
+        margin: 0;
+    }
+    .testimonial-img a{
+        display: none;
+    }
+    .our-client img {
+        width: 72%;
+    }
+    .our-client {
+        margin-top: 4rem;
+    }
+}

@@ -1,0 +1,626 @@
+/* =====================
+BASIC SETUP
+======================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/* =====================
+REUSABLE COMPONENT
+======================*/
+.row {
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+a.btn {
+    color: #00e0d0;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    border: .1rem solid #00e0d0;
+    display: inline-block;
+    border-radius: .5rem;
+    transition: .3s ease-in-out all;
+}
+
+a.btn:hover {
+    background: #3bcac0c4;
+    color: #fff;
+}
+
+h2.section-heading {
+    font-size: 2.2rem;
+    color: #413d4b;
+    font-weight: 700;
+}
+
+.p-7 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.mt-7 {
+    margin-top: 7rem;
+}
+
+.mb-7 {
+    margin-bottom: 7rem;
+}
+
+.m-t-20 {
+    margin-top: 15rem;
+}
+
+.col-6 {
+    width: 16.66%;
+    float: left;
+}
+
+/*=====================
+NAV SECTION
+======================*/
+nav {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9999;
+}
+
+.logo {
+    float: left;
+    margin-top: .8rem;
+}
+
+.logo a {
+    display: inline-block;
+
+}
+
+ul.main-nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul.main-nav li {}
+
+ul.main-nav li a:link,
+ul.main-nav li a:visited {
+    color: #fff;
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 2.5rem;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+ul.main-nav li a:hover {
+    color: #00e0d0;
+}
+/* STICKY MENU  */
+.sticky {
+position: fixed;
+top: 0;
+background:linear-gradient(rgba(95, 95, 95, 0.6), rgba(95, 95, 95, 0.6));
+color: #000;
+box-shadow: 0 5px 7px rgba(0, 0, 0, 0.274);
+}
+/* Mobile menu */ 
+.mobile-menu span {
+    color: #fff;
+    font-size: 3.5rem;
+    float: right;
+    margin-top: 1rem;
+    display: none;
+    
+}
+.mobile-menu span:hover{
+    cursor: pointer;
+}
+.ovelay {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 0;
+    overflow-x: hidden;
+    transition: .5s;
+}
+.overlay-content{
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay-content a {
+    color: #999;
+    display: block;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    margin: 2rem 0;
+}
+.overlay-content a:hover{
+    color: #fff;
+}
+
+.closebtn {
+    position: absolute;
+    right: 2rem;
+    font-size: 5rem;
+    top: 3rem;
+    color: #fff;
+}
+/* =====================
+SLIDER SECTION
+======================*/
+
+.singale-slider {
+    background-image: linear-gradient(rgba(94, 72, 173, 0.9), rgba(51, 42, 85, 0.9)),
+        url('img/header-bg.jpg');
+    height: 67rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.text-hero-box {
+    position: absolute;
+    top: 20rem;
+    overflow: hidden;
+    left: 0;
+    width: 82rem;
+    right: 0;
+    margin: 0 auto;
+}
+
+.text-hero-box h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.text-hero-box h1::after {
+    content: "";
+    background: #00e0d0;
+    height: .3rem;
+    display: block;
+    width: 5rem;
+    margin: 0 auto;
+    margin-top: 2.8rem;
+}
+
+.text-hero-box p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: lighter;
+    margin: 3rem 0 5.3rem 0;
+}
+
+.btn-heder {}
+
+.owl-nav {
+    position: absolute;
+    bottom: 3rem;
+}
+
+/* =====================
+STORY SECTION
+======================*/
+
+
+.story-about h2 {
+    margin-bottom: 2.5rem;
+}
+
+.story-about p {
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+.story-about a {
+    margin-top: 3rem;
+}
+
+/* =====================
+PLAY VIDEO SECTION
+======================*/
+.play-video {
+    background-image: linear-gradient(rgba(25, 19, 58, 0.9), rgba(25, 19, 58, 0.9)),
+        url('img/watch-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45rem;
+}
+
+.play-video img {
+    width: 100px;
+    height: 100px;
+}
+
+.play-video p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 3rem;
+}
+
+/* =====================
+EXPERTISE SECTION
+======================*/
+
+.expertise-head {
+    margin-bottom: 4.5rem;
+}
+
+.expertise-head h2 {
+    margin-bottom: 1.5rem;
+}
+
+.expertise-head p {
+    font-size: 1.4rem;
+    color: #2f2d35;
+}
+
+.expertise-head p::after {
+    content: "";
+    background: #c6c4c9;
+    height: .2rem;
+    width: 5rem;
+    display: block;
+    margin: auto;
+    margin-top: 1.9rem;
+}
+
+.singale-expertise {
+    padding: 2rem;
+}
+
+.singale-expertise img {
+    height: 5rem;
+}
+
+.singale-expertise h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 3rem 0 2rem 0;
+    color: #413d4b;
+}
+
+.singale-expertise p {
+    font-size: 1.4rem;
+    color: #333333;
+    margin: 0 1.5rem;
+    line-height: 2.2rem;
+}
+
+/* =====================
+MEAT SECTION
+======================*/
+.meet-section {
+    background-image: linear-gradient(rgba(94, 72, 173, 0.9), rgba(51, 42, 85, 0.9)),
+        url('img/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.meet-section .expertise-head h2,
+.meet-section .expertise-head p {
+    color: #fff;
+}
+
+.singale-meet img {
+    width: 100%;
+    border: .1rem solid #fff;
+    line-height: 0;
+    margin-bottom: -.3rem;
+}
+
+.meet-about {
+    border: .1rem solid #77768b;
+    padding: 1.5rem 0;
+}
+
+.meet-about h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: .7rem;
+}
+
+.meet-about span {
+    font-size: 1.3rem;
+}
+
+.meet-bottom {
+    margin-top: 7rem;
+}
+
+.meet-bottom p {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.meet-bottom a.btn {
+    margin-top: 3rem;
+}
+
+/* =====================
+WORK SECTION
+======================*/
+.work-head {
+    overflow: hidden;
+
+}
+
+.work-head h2 {
+    font-size: 2.2rem;
+    color: #413d4b;
+    font-weight: 700;
+}
+
+.work-head a {
+    float: right;
+    font-size: 1.4rem;
+    color: #413d4b;
+}
+
+.work-head a:hover {
+    color: blueviolet;
+}
+
+.our-work {
+    overflow: hidden;
+}
+/* .col-6 div{
+    height: 200px;
+} */
+
+/*=====================
+TESTIMONIAL SECTION
+======================*/
+.testimonia-section {
+    background-image: linear-gradient(rgba(94, 72, 173, 0.9), rgba(51, 42, 85, 0.9)),
+        url('img/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.singale-testimonial i {
+   
+    font-size: 3.6rem;
+    margin-bottom: 4rem;
+    
+}
+
+.singale-testimonial p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin: 0 13rem;
+}
+
+.testimonial-about {
+    margin-top: 5rem;
+}
+.testimonial-about p {
+    font-size: 1.4rem;
+}
+
+.testimonial-about span {
+    font-size: 1.3rem;
+}
+
+.testimonial-img {
+    margin-top: 4rem;
+}
+.testimonial-img a {
+    color: #fff;
+    font-size: 5rem;
+    padding: 5rem;
+}
+/*=====================
+CONTACT SECTION
+======================*/
+.conttuct-us h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3.5rem;
+    color: #413d4b;
+}
+.conttuct-us input,
+.conttuct-us textarea {
+    width: 85%;
+    margin-bottom: 2.3rem;
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+    border: .1rem solid #77768b;
+    transition: .3s;
+}
+.conttuct-us input:focus,
+.conttuct-us textarea:focus {
+    background: aliceblue;
+}
+.conttuct-us input:last-child {
+    margin-bottom: 0;
+    border: .1rem solid #33e6d9;
+    width: 12rem;
+    border-radius: .5rem;
+    background: transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+.conttuct-us input:last-child:hover{
+    background: #33e6d9;
+}
+.our-client h2{
+    font-size: 2.2rem;
+    margin-bottom: 3.5rem;
+    color: #413d4b;
+}
+.our-client ul li {
+    margin-bottom: 5rem;
+}
+.our-client .float{
+    float: right;
+}
+/*=====================
+FOOTER SECTION
+======================*/
+.footer-section {
+    background-image: linear-gradient(rgba(94, 72, 173, 0.8), rgba(51, 42, 85, 0.8)),
+    url('img/footer-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.footer-left p{
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    margin-top: 2.5rem;
+}
+
+.stido {
+    margin-top: 2rem;
+}
+
+.stido h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.location{
+    margin-top: 4rem;
+    overflow: hidden;
+}
+.location i {
+    float: left;
+    font-size: 4rem;
+}
+.location address {
+    float: left;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    line-height: 2.6rem;
+}
+.phone{
+    margin-top: 1rem;
+}
+.phone i{
+font-size: 4rem;
+}
+.phone span{
+    font-size: 1.4rem;
+        margin-left: 1rem;
+}
+
+.subscribe{
+    margin-top: 4rem;
+    overflow: hidden;
+}
+.subscribe input {
+    width: 70%;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    border: .1rem solid #9e98b0;
+    background: transparent;
+    color: #fff;
+    float: left;
+}
+
+.subscribe i {
+    color: #fff;
+    font-size: 3rem;
+    background: #9e97b0;
+    padding: .9rem 2rem;
+    margin-left: 1rem;
+    display: inline-block;
+}
+
+.social-icon {
+    margin-top: 2.5rem;
+}
+.social-icon ul li  {
+    float: left;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: .1rem solid #ffff;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: .8rem;
+    transition: .3s;
+    cursor: pointer;
+}
+.social-icon ul li:hover{
+    background: white;
+ 
+}
+
+.social-icon ul li a {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    display: inline-block;
+    width: 100%;
+    height: 70%;
+}
+.social-icon ul li:hover a{
+    color: #000;
+}
+.copy-right-area{
+    margin-top: 2rem;
+
+}
+.footer-item ul li {
+    float: left;
+}
+
+.footer-item ul li a {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-right: 3rem;
+}
+
+.footer-item ul li:last-child a {
+    margin-right: 0;
+}
+.copy-right p {
+    font-size: 1.4rem;
+    float: right;
+}
